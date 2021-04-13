@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Poisson</class>
+ <widget class="QDialog" name="Poisson">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>610</width>
+    <height>150</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>610</width>
+    <height>150</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>610</width>
+    <height>150</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Пуассон 3000</string>
+  </property>
+  <widget class="QLabel" name="label_formula_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>41</y>
+     <width>180</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Monospac821 BT</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+border:2px solid #ba7f7f;
+border-top-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_n_2">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>10</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Monospac821 BT</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSpinBox {
+background-color: rgb(255,255,255);
+border:2px solid #ba7f7f;
+border-bottom:2px solid #ba7f7f;
+border-left:0px solid #ba7f7f;
+ }
+
+
+
+QSpinBox::up-button {
+     subcontrol-origin: border;
+     subcontrol-position: top right; /* позиция - в верхнем правом углу */
+     width: 13px;
+     height: 8px;
+	 border-image: url(:/new/prefix1/png/up11.png);
+     border-width: 1px;
+     margin: 1px 1px 1px 1px;
+ }
+QSpinBox::up-button:hover { 
+	border-image: url(:/new/prefix1/png/up12.png);
+ }
+QSpinBox::up-button:pressed {
+	border-image: url(:/new/prefix1/png/up13.png);
+ }
+
+
+
+QSpinBox::down-button {
+     subcontrol-origin: border;
+     subcontrol-position: bottom right; /* позиция - в нижнем правом углу */
+     width: 13px;
+     height: 8px;
+	 border-image: url(:/new/prefix1/png/down11.png);
+     border-width: 1px;
+     margin: 1px 1px 1px 1px;
+ }
+QSpinBox::down-button:hover { 
+	 
+	border-image: url(:/new/prefix1/png/down12.png);
+ }
+QSpinBox::down-button:pressed {
+	
+	border-image: url(:/new/prefix1/png/down13.png);
+ }</string>
+   </property>
+   <property name="maximum">
+    <number>99999999</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_m_2">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>30</y>
+     <width>301</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Monospac821 BT</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+border:2px solid #ba7f7f;
+border-top: 1px solid #ba7f7f;
+border-right: 0px solid #ba7f7f;</string>
+   </property>
+   <property name="text">
+    <string>Кол-во наступлений события A m: </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_text_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>180</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Monospac821 BT</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+border:2px solid #ba7f7f;
+border-bottom-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Формула Пуассона</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_p_2">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>50</y>
+     <width>301</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Monospac821 BT</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+border:2px solid #ba7f7f;
+border-top: 1px solid #ba7f7f;
+border-right: 0px solid #ba7f7f;</string>
+   </property>
+   <property name="text">
+    <string>Вероятность наступления события А p: </string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_sign_2">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>30</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Monospac821 BT</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+border:2px solid #ba7f7f;
+border-left: 0px solid #ba7f7f;
+border-top: 1px solid #ba7f7f;
+</string>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+   <property name="maxLength">
+    <number>9</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_answer_2">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>110</y>
+     <width>401</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Monospac821 BT</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+border:2px solid #ba7f7f;</string>
+   </property>
+   <property name="text">
+    <string>Ответ:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_decision_2">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>75</y>
+     <width>401</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Monospac821 BT</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+    background-color: #ffffff;
+	color: rgb(0, 0, 0);
+    border: 2px solid  #ba7f7f;
+}
+QPushButton:hover{
+background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, 
+                          stop:0 #ffffff, stop:1 #cecece);
+	                      border-color:  #ba7f7f;
+}
+QPushButton:pressed{
+background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, 
+                          stop:0 #cecece, stop:1 #7f7f7f);
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Решение</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_n_2">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>10</y>
+     <width>301</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Monospac821 BT</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+border:2px solid #ba7f7f;
+border-right: 0px solid #ba7f7f;</string>
+   </property>
+   <property name="text">
+    <string>Кол-во независимых испытаний n: </string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_p_2">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>50</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Monospac821 BT</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDoubleSpinBox {
+background-color: rgb(255,255,255);
+border:2px solid #ba7f7f;
+border-bottom:2px solid #ba7f7f;
+border-left:0px solid #ba7f7f;
+border-top:1px solid #ba7f7f;
+ }
+
+QDoubleSpinBox::up-button {
+     subcontrol-origin: border;
+     subcontrol-position: top right; /* позиция - в верхнем правом углу */
+     width: 13px;
+     height: 8px;
+	 border-image: url(:/new/prefix1/png/up11.png);
+     border-width: 1px;
+     margin: 0px 1px 1px 1px;
+ }
+QDoubleSpinBox::up-button:hover { 
+	border-image: url(:/new/prefix1/png/up12.png);
+ }
+QDoubleSpinBox::up-button:pressed {
+	border-image: url(:/new/prefix1/png/up13.png);
+ }
+
+QDoubleSpinBox::down-button {
+     subcontrol-origin: border;
+     subcontrol-position: bottom right; /* позиция - в нижнем правом углу */
+     width: 13px;
+     height: 8px;
+	 border-image: url(:/new/prefix1/png/down11.png);
+     border-width: 1px;
+     margin: 1px 1px 1px 1px;
+ }
+QDoubleSpinBox::down-button:hover { 
+	border-image: url(:/new/prefix1/png/down12.png);
+ }
+QDoubleSpinBox::down-button:pressed {
+	border-image: url(:/new/prefix1/png/down13.png);
+ }</string>
+   </property>
+   <property name="decimals">
+    <number>6</number>
+   </property>
+   <property name="maximum">
+    <double>1.000000000000000</double>
+   </property>
+   <property name="singleStep">
+    <double>0.100000000000000</double>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

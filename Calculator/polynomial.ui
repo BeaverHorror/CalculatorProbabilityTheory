@@ -1,0 +1,932 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Polynomial</class>
+ <widget class="QDialog" name="Polynomial">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>620</width>
+    <height>230</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>620</width>
+    <height>230</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>620</width>
+    <height>230</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Полиномиал 3000</string>
+  </property>
+  <widget class="QSpinBox" name="spinBox_m_3_5">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>150</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSpinBox {
+background-color: rgb(255,255,255);
+border:2px solid #ba7f7f;
+border-bottom:2px solid #ba7f7f;
+border-left:0px solid #ba7f7f;
+border-top:1px solid #ba7f7f;
+ }
+
+QSpinBox::up-button {
+     subcontrol-origin: border;
+     subcontrol-position: top right; /* позиция - в верхнем правом углу */
+     width: 13px;
+     height: 8px;
+	 border-image: url(:/new/prefix1/png/up11.png);
+     border-width: 1px;
+     margin: 0px 1px 1px 1px;
+ }
+QSpinBox::up-button:hover { 
+	border-image: url(:/new/prefix1/png/up12.png);
+ }
+QSpinBox::up-button:pressed {
+	border-image: url(:/new/prefix1/png/up13.png);
+ }
+
+QSpinBox::down-button {
+     subcontrol-origin: border;
+     subcontrol-position: bottom right; /* позиция - в нижнем правом углу */
+     width: 13px;
+     height: 8px;
+	 border-image: url(:/new/prefix1/png/down11.png);
+     border-width: 1px;
+     margin: 1px 1px 1px 1px;
+ }
+QSpinBox::down-button:hover { 
+	border-image: url(:/new/prefix1/png/down12.png);
+ }
+QSpinBox::down-button:pressed {
+	border-image: url(:/new/prefix1/png/down13.png);
+ }</string>
+   </property>
+   <property name="maximum">
+    <number>12</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_n_3">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>130</y>
+     <width>301</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Monospac821 BT</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSpinBox {
+background-color: rgb(255,255,255);
+border:2px solid #ba7f7f;
+border-bottom:2px solid #ba7f7f;
+border-left:0px solid #ba7f7f;
+ }
+
+QSpinBox::up-button {
+     subcontrol-origin: border;
+     subcontrol-position: top right; /* позиция - в верхнем правом углу */
+     width: 13px;
+     height: 8px;
+	 border-image: url(:/new/prefix1/png/up11.png);
+     border-width: 1px;
+     margin: 1px 1px 1px 1px;
+ }
+QSpinBox::up-button:hover { 
+	border-image: url(:/new/prefix1/png/up12.png);
+ }
+QSpinBox::up-button:pressed {
+	border-image: url(:/new/prefix1/png/up13.png);
+ }
+
+QSpinBox::down-button {
+     subcontrol-origin: border;
+     subcontrol-position: bottom right; /* позиция - в нижнем правом углу */
+     width: 13px;
+     height: 8px;
+	 border-image: url(:/new/prefix1/png/down11.png);
+     border-width: 1px;
+     margin: 1px 1px 1px 1px;
+ }
+QSpinBox::down-button:hover { 
+	border-image: url(:/new/prefix1/png/down12.png);
+ }
+QSpinBox::down-button:pressed {
+	border-image: url(:/new/prefix1/png/down13.png);
+ }</string>
+   </property>
+   <property name="maximum">
+    <number>12</number>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_p_3_4">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>170</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDoubleSpinBox {
+background-color: rgb(255,255,255);
+border:2px solid #ba7f7f;
+border-bottom:2px solid #ba7f7f;
+border-left:0px solid #ba7f7f;
+border-top:1px solid #ba7f7f;
+ }
+
+QDoubleSpinBox::up-button {
+     subcontrol-origin: border;
+     subcontrol-position: top right; /* позиция - в верхнем правом углу */
+     width: 13px;
+     height: 8px;
+	 border-image: url(:/new/prefix1/png/up11.png);
+     border-width: 1px;
+     margin: 0px 1px 1px 1px;
+ }
+QDoubleSpinBox::up-button:hover { 
+	border-image: url(:/new/prefix1/png/up12.png);
+ }
+QDoubleSpinBox::up-button:pressed {
+	border-image: url(:/new/prefix1/png/up13.png);
+ }
+
+QDoubleSpinBox::down-button {
+     subcontrol-origin: border;
+     subcontrol-position: bottom right; /* позиция - в нижнем правом углу */
+     width: 13px;
+     height: 8px;
+	 border-image: url(:/new/prefix1/png/down11.png);
+     border-width: 1px;
+     margin: 1px 1px 1px 1px;
+ }
+QDoubleSpinBox::down-button:hover { 
+	border-image: url(:/new/prefix1/png/down12.png);
+ }
+QDoubleSpinBox::down-button:pressed {
+	border-image: url(:/new/prefix1/png/down13.png);
+ }</string>
+   </property>
+   <property name="maximum">
+    <double>1.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_decision_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>195</y>
+     <width>111</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Monospac821 BT</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+    background-color: #ffffff;
+	color: rgb(0, 0, 0);
+    border:2px solid #ba7f7f;
+}
+QPushButton:hover{
+background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, 
+                          stop:0 #ffffff, stop:1 #cecece);
+	                      border-color: #ba7f7f;
+}
+QPushButton:pressed{
+background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, 
+                          stop:0 #cecece, stop:1 #7f7f7f);
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Решение</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_p_3_2">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>170</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDoubleSpinBox {
+background-color: rgb(255,255,255);
+border:2px solid #ba7f7f;
+border-bottom:2px solid #ba7f7f;
+border-left:0px solid #ba7f7f;
+border-top:1px solid #ba7f7f;
+ }
+
+QDoubleSpinBox::up-button {
+     subcontrol-origin: border;
+     subcontrol-position: top right; /* позиция - в верхнем правом углу */
+     width: 13px;
+     height: 8px;
+	 border-image: url(:/new/prefix1/png/up11.png);
+     border-width: 1px;
+     margin: 0px 1px 1px 1px;
+ }
+QDoubleSpinBox::up-button:hover { 
+	border-image: url(:/new/prefix1/png/up12.png);
+ }
+QDoubleSpinBox::up-button:pressed {
+	border-image: url(:/new/prefix1/png/up13.png);
+ }
+
+QDoubleSpinBox::down-button {
+     subcontrol-origin: border;
+     subcontrol-position: bottom right; /* позиция - в нижнем правом углу */
+     width: 13px;
+     height: 8px;
+	 border-image: url(:/new/prefix1/png/down11.png);
+     border-width: 1px;
+     margin: 1px 1px 1px 1px;
+ }
+QDoubleSpinBox::down-button:hover { 
+	border-image: url(:/new/prefix1/png/down12.png);
+ }
+QDoubleSpinBox::down-button:pressed {
+	border-image: url(:/new/prefix1/png/down13.png);
+ }</string>
+   </property>
+   <property name="maximum">
+    <double>1.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_m_3_2">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>150</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSpinBox {
+background-color: rgb(255,255,255);
+border:2px solid #ba7f7f;
+border-bottom:2px solid #ba7f7f;
+border-left:0px solid #ba7f7f;
+border-top:1px solid #ba7f7f;
+ }
+
+QSpinBox::up-button {
+     subcontrol-origin: border;
+     subcontrol-position: top right; /* позиция - в верхнем правом углу */
+     width: 13px;
+     height: 8px;
+	 border-image: url(:/new/prefix1/png/up11.png);
+     border-width: 1px;
+     margin: 0px 1px 1px 1px;
+ }
+QSpinBox::up-button:hover { 
+	border-image: url(:/new/prefix1/png/up12.png);
+ }
+QSpinBox::up-button:pressed {
+	border-image: url(:/new/prefix1/png/up13.png);
+ }
+
+QSpinBox::down-button {
+     subcontrol-origin: border;
+     subcontrol-position: bottom right; /* позиция - в нижнем правом углу */
+     width: 13px;
+     height: 8px;
+	 border-image: url(:/new/prefix1/png/down11.png);
+     border-width: 1px;
+     margin: 1px 1px 1px 1px;
+ }
+QSpinBox::down-button:hover { 
+	border-image: url(:/new/prefix1/png/down12.png);
+ }
+QSpinBox::down-button:pressed {
+	border-image: url(:/new/prefix1/png/down13.png);
+ }</string>
+   </property>
+   <property name="maximum">
+    <number>12</number>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_p_3_6">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>170</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDoubleSpinBox {
+background-color: rgb(255,255,255);
+border:2px solid #ba7f7f;
+border-bottom:2px solid #ba7f7f;
+border-left:0px solid #ba7f7f;
+border-top:1px solid #ba7f7f;
+ }
+
+QDoubleSpinBox::up-button {
+     subcontrol-origin: border;
+     subcontrol-position: top right; /* позиция - в верхнем правом углу */
+     width: 13px;
+     height: 8px;
+	 border-image: url(:/new/prefix1/png/up11.png);
+     border-width: 1px;
+     margin: 0px 1px 1px 1px;
+ }
+QDoubleSpinBox::up-button:hover { 
+	border-image: url(:/new/prefix1/png/up12.png);
+ }
+QDoubleSpinBox::up-button:pressed {
+	border-image: url(:/new/prefix1/png/up13.png);
+ }
+
+QDoubleSpinBox::down-button {
+     subcontrol-origin: border;
+     subcontrol-position: bottom right; /* позиция - в нижнем правом углу */
+     width: 13px;
+     height: 8px;
+	 border-image: url(:/new/prefix1/png/down11.png);
+     border-width: 1px;
+     margin: 1px 1px 1px 1px;
+ }
+QDoubleSpinBox::down-button:hover { 
+	border-image: url(:/new/prefix1/png/down12.png);
+ }
+QDoubleSpinBox::down-button:pressed {
+	border-image: url(:/new/prefix1/png/down13.png);
+ }</string>
+   </property>
+   <property name="maximum">
+    <double>1.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_m_3_1">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>150</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSpinBox {
+background-color: rgb(255,255,255);
+border:2px solid #ba7f7f;
+border-bottom:2px solid #ba7f7f;
+border-left:0px solid #ba7f7f;
+border-top:1px solid #ba7f7f;
+ }
+
+QSpinBox::up-button {
+     subcontrol-origin: border;
+     subcontrol-position: top right; /* позиция - в верхнем правом углу */
+     width: 13px;
+     height: 8px;
+	 border-image: url(:/new/prefix1/png/up11.png);
+     border-width: 1px;
+     margin: 0px 1px 1px 1px;
+ }
+QSpinBox::up-button:hover { 
+	border-image: url(:/new/prefix1/png/up12.png);
+ }
+QSpinBox::up-button:pressed {
+	border-image: url(:/new/prefix1/png/up13.png);
+ }
+
+QSpinBox::down-button {
+     subcontrol-origin: border;
+     subcontrol-position: bottom right; /* позиция - в нижнем правом углу */
+     width: 13px;
+     height: 8px;
+	 border-image: url(:/new/prefix1/png/down11.png);
+     border-width: 1px;
+     margin: 1px 1px 1px 1px;
+ }
+QSpinBox::down-button:hover { 
+	border-image: url(:/new/prefix1/png/down12.png);
+ }
+QSpinBox::down-button:pressed {
+	border-image: url(:/new/prefix1/png/down13.png);
+ }</string>
+   </property>
+   <property name="maximum">
+    <number>12</number>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_p_3_1">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>170</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDoubleSpinBox {
+background-color: rgb(255,255,255);
+border:2px solid #ba7f7f;
+border-bottom:2px solid #ba7f7f;
+border-left:0px solid #ba7f7f;
+border-top:1px solid #ba7f7f;
+ }
+
+QDoubleSpinBox::up-button {
+     subcontrol-origin: border;
+     subcontrol-position: top right; /* позиция - в верхнем правом углу */
+     width: 13px;
+     height: 8px;
+	 border-image: url(:/new/prefix1/png/up11.png);
+     border-width: 1px;
+     margin: 0px 1px 1px 1px;
+ }
+QDoubleSpinBox::up-button:hover { 
+	border-image: url(:/new/prefix1/png/up12.png);
+ }
+QDoubleSpinBox::up-button:pressed {
+	border-image: url(:/new/prefix1/png/up13.png);
+ }
+
+QDoubleSpinBox::down-button {
+     subcontrol-origin: border;
+     subcontrol-position: bottom right; /* позиция - в нижнем правом углу */
+     width: 13px;
+     height: 8px;
+	 border-image: url(:/new/prefix1/png/down11.png);
+     border-width: 1px;
+     margin: 1px 1px 1px 1px;
+ }
+QDoubleSpinBox::down-button:hover { 
+	border-image: url(:/new/prefix1/png/down12.png);
+ }
+QDoubleSpinBox::down-button:pressed {
+	border-image: url(:/new/prefix1/png/down13.png);
+ }</string>
+   </property>
+   <property name="maximum">
+    <double>1.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_p_3_3">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>170</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDoubleSpinBox {
+background-color: rgb(255,255,255);
+border:2px solid #ba7f7f;
+border-bottom:2px solid #ba7f7f;
+border-left:0px solid #ba7f7f;
+border-top:1px solid #ba7f7f;
+ }
+
+QDoubleSpinBox::up-button {
+     subcontrol-origin: border;
+     subcontrol-position: top right; /* позиция - в верхнем правом углу */
+     width: 13px;
+     height: 8px;
+	 border-image: url(:/new/prefix1/png/up11.png);
+     border-width: 1px;
+     margin: 0px 1px 1px 1px;
+ }
+QDoubleSpinBox::up-button:hover { 
+	border-image: url(:/new/prefix1/png/up12.png);
+ }
+QDoubleSpinBox::up-button:pressed {
+	border-image: url(:/new/prefix1/png/up13.png);
+ }
+
+QDoubleSpinBox::down-button {
+     subcontrol-origin: border;
+     subcontrol-position: bottom right; /* позиция - в нижнем правом углу */
+     width: 13px;
+     height: 8px;
+	 border-image: url(:/new/prefix1/png/down11.png);
+     border-width: 1px;
+     margin: 1px 1px 1px 1px;
+ }
+QDoubleSpinBox::down-button:hover { 
+	border-image: url(:/new/prefix1/png/down12.png);
+ }
+QDoubleSpinBox::down-button:pressed {
+	border-image: url(:/new/prefix1/png/down13.png);
+ }</string>
+   </property>
+   <property name="maximum">
+    <double>1.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_p_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>170</y>
+     <width>301</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Monospac821 BT</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+border:2px solid #ba7f7f;
+border-top:1px solid #ba7f7f;
+</string>
+   </property>
+   <property name="text">
+    <string>Вероятность наступления события А p: </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_formula_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>601</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Monospac821 BT</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+border:2px solid #ba7f7f;
+border-top-color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_answer_3">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>195</y>
+     <width>481</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Monospac821 BT</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+border:2px solid #ba7f7f;
+</string>
+   </property>
+   <property name="text">
+    <string>Ответ:</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_m_3_4">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>150</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSpinBox {
+background-color: rgb(255,255,255);
+border:2px solid #ba7f7f;
+border-bottom:2px solid #ba7f7f;
+border-left:0px solid #ba7f7f;
+border-top:1px solid #ba7f7f;
+ }
+
+QSpinBox::up-button {
+     subcontrol-origin: border;
+     subcontrol-position: top right; /* позиция - в верхнем правом углу */
+     width: 13px;
+     height: 8px;
+	 border-image: url(:/new/prefix1/png/up11.png);
+     border-width: 1px;
+     margin: 0px 1px 1px 1px;
+ }
+QSpinBox::up-button:hover { 
+	border-image: url(:/new/prefix1/png/up12.png);
+ }
+QSpinBox::up-button:pressed {
+	border-image: url(:/new/prefix1/png/up13.png);
+ }
+
+QSpinBox::down-button {
+     subcontrol-origin: border;
+     subcontrol-position: bottom right; /* позиция - в нижнем правом углу */
+     width: 13px;
+     height: 8px;
+	 border-image: url(:/new/prefix1/png/down11.png);
+     border-width: 1px;
+     margin: 1px 1px 1px 1px;
+ }
+QSpinBox::down-button:hover { 
+	border-image: url(:/new/prefix1/png/down12.png);
+ }
+QSpinBox::down-button:pressed {
+	border-image: url(:/new/prefix1/png/down13.png);
+ }</string>
+   </property>
+   <property name="maximum">
+    <number>12</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_text_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>601</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Monospac821 BT</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+border:2px solid #ba7f7f;
+border-bottom-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Полиномиальная формула</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_m_3_6">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>150</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSpinBox {
+background-color: rgb(255,255,255);
+border:2px solid #ba7f7f;
+border-bottom:2px solid #ba7f7f;
+border-left:0px solid #ba7f7f;
+border-top:1px solid #ba7f7f;
+ }
+
+QSpinBox::up-button {
+     subcontrol-origin: border;
+     subcontrol-position: top right; /* позиция - в верхнем правом углу */
+     width: 13px;
+     height: 8px;
+	 border-image: url(:/new/prefix1/png/up11.png);
+     border-width: 1px;
+     margin: 0px 1px 1px 1px;
+ }
+QSpinBox::up-button:hover { 
+	border-image: url(:/new/prefix1/png/up12.png);
+ }
+QSpinBox::up-button:pressed {
+	border-image: url(:/new/prefix1/png/up13.png);
+ }
+
+QSpinBox::down-button {
+     subcontrol-origin: border;
+     subcontrol-position: bottom right; /* позиция - в нижнем правом углу */
+     width: 13px;
+     height: 8px;
+	 border-image: url(:/new/prefix1/png/down11.png);
+     border-width: 1px;
+     margin: 1px 1px 1px 1px;
+ }
+QSpinBox::down-button:hover { 
+	border-image: url(:/new/prefix1/png/down12.png);
+ }
+QSpinBox::down-button:pressed {
+	border-image: url(:/new/prefix1/png/down13.png);
+ }</string>
+   </property>
+   <property name="maximum">
+    <number>12</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_n_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>130</y>
+     <width>301</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Monospac821 BT</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+border:2px solid #ba7f7f;
+</string>
+   </property>
+   <property name="text">
+    <string>Кол-во независимых испытаний n: </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_m_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>150</y>
+     <width>301</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Monospac821 BT</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+border:2px solid #ba7f7f;
+border-top:1px solid #ba7f7f;
+</string>
+   </property>
+   <property name="text">
+    <string>Кол-во наступлений события A m: </string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_m_3_3">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>150</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSpinBox {
+background-color: rgb(255,255,255);
+border:2px solid #ba7f7f;
+border-bottom:2px solid #ba7f7f;
+border-left:0px solid #ba7f7f;
+border-top:1px solid #ba7f7f;
+ }
+
+QSpinBox::up-button {
+     subcontrol-origin: border;
+     subcontrol-position: top right; /* позиция - в верхнем правом углу */
+     width: 13px;
+     height: 8px;
+	 border-image: url(:/new/prefix1/png/up11.png);
+     border-width: 1px;
+     margin: 0px 1px 1px 1px;
+ }
+QSpinBox::up-button:hover { 
+	border-image: url(:/new/prefix1/png/up12.png);
+ }
+QSpinBox::up-button:pressed {
+	border-image: url(:/new/prefix1/png/up13.png);
+ }
+
+QSpinBox::down-button {
+     subcontrol-origin: border;
+     subcontrol-position: bottom right; /* позиция - в нижнем правом углу */
+     width: 13px;
+     height: 8px;
+	 border-image: url(:/new/prefix1/png/down11.png);
+     border-width: 1px;
+     margin: 1px 1px 1px 1px;
+ }
+QSpinBox::down-button:hover { 
+	border-image: url(:/new/prefix1/png/down12.png);
+ }
+QSpinBox::down-button:pressed {
+	border-image: url(:/new/prefix1/png/down13.png);
+ }</string>
+   </property>
+   <property name="maximum">
+    <number>12</number>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_p_3_5">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>170</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDoubleSpinBox {
+background-color: rgb(255,255,255);
+border:2px solid #ba7f7f;
+border-bottom:2px solid #ba7f7f;
+border-left:0px solid #ba7f7f;
+border-top:1px solid #ba7f7f;
+ }
+
+QDoubleSpinBox::up-button {
+     subcontrol-origin: border;
+     subcontrol-position: top right; /* позиция - в верхнем правом углу */
+     width: 13px;
+     height: 8px;
+	 border-image: url(:/new/prefix1/png/up11.png);
+     border-width: 1px;
+     margin: 0px 1px 1px 1px;
+ }
+QDoubleSpinBox::up-button:hover { 
+	border-image: url(:/new/prefix1/png/up12.png);
+ }
+QDoubleSpinBox::up-button:pressed {
+	border-image: url(:/new/prefix1/png/up13.png);
+ }
+
+QDoubleSpinBox::down-button {
+     subcontrol-origin: border;
+     subcontrol-position: bottom right; /* позиция - в нижнем правом углу */
+     width: 13px;
+     height: 8px;
+	 border-image: url(:/new/prefix1/png/down11.png);
+     border-width: 1px;
+     margin: 1px 1px 1px 1px;
+ }
+QDoubleSpinBox::down-button:hover { 
+	border-image: url(:/new/prefix1/png/down12.png);
+ }
+QDoubleSpinBox::down-button:pressed {
+	border-image: url(:/new/prefix1/png/down13.png);
+ }</string>
+   </property>
+   <property name="maximum">
+    <double>1.000000000000000</double>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
